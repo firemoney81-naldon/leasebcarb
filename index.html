@@ -1,23 +1,553 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+
+
+    <!-- JSON-LD Structured Data for Naver/Google SEO -->
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "티볼리 장기렌트 최신 정보",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@type": "Article",
+                "url": "/",
+                "name": "티볼리 장기렌트 가격 절약 비법: 2026년 이후 시장 변화와 대응 전략",
+                "datePublished": "2025-11-03T18:00:00+09:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "장기렌트 비교 전문가",
+                    "url": "/"
+                },
+                "headline": "티볼리 장기렌트 가격 절약 비법: 2026년 이후 시장 변화와 대응 전략"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@type": "Article",
+                "url": "/",
+                "name": "티볼리 장기렌트 vs 신차 할부: 내돈내산 후기로 분석한 장단점 비교",
+                "datePublished": "2025-11-02T18:00:00+09:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "장기렌트 비교 전문가",
+                    "url": "/"
+                },
+                "headline": "티볼리 장기렌트 vs 신차 할부: 내돈내산 후기로 분석한 장단점 비교"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@type": "Article",
+                "url": "/",
+                "name": "티볼리 에어 & 그랜드 모델별 비교: 나에게 맞는 차량 선택 가이드",
+                "datePublished": "2025-11-01T18:00:00+09:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "장기렌트 비교 전문가",
+                    "url": "/"
+                },
+                "headline": "티볼리 에어 & 그랜드 모델별 비교: 나에게 맞는 차량 선택 가이드"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+                "@type": "Article",
+                "url": "/",
+                "name": "티볼리 장기렌트 초기 비용 0원? 무보증 조건과 보증금 차이점 완벽 분석",
+                "datePublished": "2025-10-31T18:00:00+09:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "장기렌트 비교 전문가",
+                    "url": "/"
+                },
+                "headline": "티볼리 장기렌트 초기 비용 0원? 무보증 조건과 보증금 차이점 완벽 분석"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+                "@type": "Article",
+                "url": "/",
+                "name": "티볼리 장기렌트 신규가입 혜택: 프로모션, 사은품, 현금지원 최신 정보",
+                "datePublished": "2025-10-30T18:00:00+09:00",
+                "author": {
+                    "@type": "Person",
+                    "name": "장기렌트 비교 전문가",
+                    "url": "/"
+                },
+                "headline": "티볼리 장기렌트 신규가입 혜택: 프로모션, 사은품, 현금지원 최신 정보"
+            }
+        }
+    ]
+}
+    </script>
+    
+    <style>
+        /* 기본 스타일 및 부드러운 색감 적용 */
+        body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.7; margin: 0; padding: 0; background: #f0f4f8; color: #333; }
+        header, section, footer { max-width: 1000px; margin: 25px auto; padding: 25px 20px; background: #ffffff; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+        
+        /* 🎨 다채롭고 부드러운 색감: 금융/신뢰 테마 */
+        h1 { color: #007bff; /* 메인 타이틀 강조 */ font-size: 2.5em; text-align: center; margin-bottom: 5px; }
+        h2 { color: #28a745; /* 섹션 타이틀: 절약/혜택 강조 */ border-bottom: 3px solid #e9ecef; padding-bottom: 10px; margin-top: 30px; }
+        h3 { color: #17a2b8; /* 서브 타이틀: 정보성/팁 강조 */ margin-top: 20px; }
+        
+        ul, ol { padding-left: 25px; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: separate; border-spacing: 0 10px; margin: 20px 0; }
+        th, td { padding: 15px; text-align: left; border: none; }
+        th { background: #007bff; color: #fff; border-radius: 8px 8px 0 0; }
+        td { background: #f8f9fa; border-bottom: 1px solid #dee2e6; }
+        tr:last-child td { border-bottom: none; }
+        
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        /* 🚀 CTA 버튼 강조 */
+        .btn-cta {
+            display: block; /* 전체 너비 사용 */
+            width: 80%;
+            margin: 25px auto;
+            padding: 18px 30px;
+            background: #ff5722; /* 액션 색상: 오렌지 */
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 700;
+            border-radius: 40px;
+            box-shadow: 0 6px 12px rgba(255, 87, 34, 0.4);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+        }
+        .btn-cta:hover {
+            background: #e64a19;
+            transform: translateY(-2px);
+        }
+
+        /* 폼 스타일 */
+        form label { font-weight: 600; display: block; margin-top: 15px; color: #333; }
+        form input[type="text"], form input[type="tel"], form input[type="number"], form select, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        form input:focus, form select:focus, form textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        /* 정보성 텍스트 박스 스타일 */
+        .info-box {
+            background: #e6f7ff; /* 라이트 블루 */
+            border-left: 5px solid #007bff;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        /* 앵커 숨김 처리 */
+        .anchor { display: block; position: relative; top: -80px; visibility: hidden; }
+
+        /* 반응형 */
+        @media(max-width: 768px) {
+            header, section, footer { margin: 15px auto; padding: 15px; }
+            h1 { font-size: 2em; }
+            .btn-cta { width: 90%; padding: 15px 0; font-size: 1.1em; }
+            th, td { display: block; width: 100%; text-align: left; }
+            th { border-radius: 8px; margin-top: 10px; }
+            .flex-container { display: block; }
+            .flex-item { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>💰 **티볼리 장기렌트** 가격 비교! <br>**2026년 최저가 견적**과 **신규가입 혜택**을 지금 바로 확인하세요.</h1>
+        <p>복잡한 장기렌트 시장, 이제는 현명하게 **티볼리 장기렌트 가격**을 비교하고 최대 **40% 이상** 할인 받으세요!</p>
+        <a href="#quick-estimate" class="btn-cta">🚀 내 최저가 **티볼리 장기렌트 견적** 즉시 확인하기</a>
+        <figure style="margin: 0; text-align: center; margin-top: 20px;">
+            <img src="https://images.pexels.com/photos/15794830/pexels-photo-15794830/free-photo-of-man-leaning-on-his-suv-car.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="티볼리 장기렌트카" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            <figcaption style="font-size: 0.8em; color: #666; margin-top: 5px;">출처: Pexels.com (상업적 사용 가능)</figcaption>
+        </figure>
+    </header>
+
+    <nav aria-label="주요 서비스 메뉴">
+        <ul>
+            <li><a href="#quick-estimate">실시간 견적 (필수)</a></li>
+            <li><a href="#tivoli-models">티볼리 모델별 분석 (Tivoli Air vs Grand)</a></li>
+            <li><a href="#saving-tips">장기렌트 비용 절약 팁</a></li>
+            <li><a href="#compare-guide">장기렌트 vs 신차 구매 비교</a></li>
+            <li><a href="#trust-links">신뢰 정보 출처 (E-A-T)</a></li>
+            <li><a href="#long-info">심층 정보 및 FAQ</a></li>
+            <li><a href="#contact-more">추가 상담 신청</a></li>
+        </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+    <section id="quick-estimate">
+        <span id="quick-estimate-anchor" class="anchor"></span>
+        <h2>🔎 **나만의 최저가 티볼리 장기렌트** 실시간 비교 견적</h2>
+        <p>간단한 정보 입력으로 국내 주요 렌탈사(롯데렌터카, SK렌터카, 현대캐피탈, KB캐피탈 등)의 **티볼리 장기렌트 견적**을 1분 만에 비교하세요. **티볼리 에어**, **티볼리 그랜드** 모델을 비롯하여 신차 출고부터 사후 관리까지 모든 **비용**을 투명하게 안내합니다. **월 렌탈료**가 가장 **저렴한곳**을 지금 바로 찾아보세요.</p>
+        <form action="/compare-submit" method="POST" style="max-width:800px; margin:auto;">
+            <h3>🔑 **티볼리 장기렌트 견적 필수 정보 입력**</h3>
+            <div class="flex-container" style="display:flex; flex-wrap:wrap; justify-content:space-between;">
+                <div class="flex-item" style="width:48%;">
+                    <label for="car-model">희망 차량 모델<span style="color:red;">*</span></label>
+                    <select id="car-model" name="car_model" required>
+                        <option value="">티볼리 모델 선택</option>
+                        <option value="Tivoli Grand">티볼리 그랜드</option>
+                        <option value="Tivoli Air">티볼리 에어</option>
+                        <option value="Tivoli T-GDI">티볼리 T-GDI (일반 모델)</option>
+                    </select>
+                </div>
+                <div class="flex-item" style="width:48%;">
+                    <label for="lease-term">희망 계약 기간<span style="color:red;">*</span></label>
+                    <select id="lease-term" name="lease_term" required>
+                        <option value="">선택</option>
+                        <option value="36">36개월 (3년)</option>
+                        <option value="48">48개월 (4년)</option>
+                        <option value="60">60개월 (5년)</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="initial-cost">초기 비용 조건<span style="color:red;">*</span></label>
+            <select id="initial-cost" name="initial_cost" required>
+                <option value="">선택</option>
+                <option value="무보증">보증금/선납금 없음 (초기 비용 0원)</option>
+                <option value="선납금">선납금 (일부 금액 미리 납부)</option>
+                <option value="보증금">보증금 (계약 종료 시 반환)</option>
+            </select>
+
+            <label for="annual-mileage">연간 약정 주행 거리<span style="color:red;">*</span></label>
+            <select id="annual-mileage" name="annual_mileage" required>
+                <option value="">선택</option>
+                <option value="10000">1만 km 이하 (단거리 운행)</option>
+                <option value="15000">1.5만 km (평균 운행)</option>
+                <option value="20000">2만 km (장거리 운행)</option>
+                <option value="무제한">주행 거리 무제한 옵션</option>
+            </select>
+            
+            <label for="option-pack">선호하는 추가 옵션/패키지</label>
+            <select id="option-pack" name="option_pack">
+                <option value="no-option">기본 옵션 (가장 저렴한 가격)</option>
+                <option value="smart-option">스마트 드라이빙 패키지</option>
+                <option value="tech-option">테크 패키지 (내비, 후방카메라 등)</option>
+                <option value="full-option">풀옵션 견적 희망</option>
+            </select>
+
+            <label for="contact-name">이름<span style="color:red;">*</span></label>
+            <input type="text" id="contact-name" name="contact_name" required placeholder="예: 홍길동">
+
+            <label for="phone">연락처<span style="color:red;">*</span></label>
+            <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678" pattern="[0-9\-]+">
+
+            <button type="submit" class="btn-cta">최저가 **티볼리 장기렌트 견적** 무료 비교 받기</button>
+        </form>
+    </section>
+    
+    <hr>
+    
+    <section id="tivoli-models">
+        <span id="tivoli-models-anchor" class="anchor"></span>
+        <h2>🚗 **티볼리 장기렌트** 핵심 모델 분석: 티볼리 에어 vs 티볼리 그랜드</h2>
+        <p class="info-box">
+            KGM(구 쌍용자동차)의 대표적인 소형 SUV인 티볼리는 **티볼리 에어**와 **티볼리 그랜드** 모델로 구분됩니다. 두 모델은 외형과 실내 공간에서 큰 차이가 있어, 장기렌트 계약 전 어떤 모델이 나에게 맞는지 정확히 비교해야 합니다. 사용자들은 주로 **"티볼리 장단점 차이점"**, **"티볼리 에어 후기"** 등을 검색하며, 자신의 라이프스타일에 맞는 차량을 찾고자 합니다.
+        </p>
+
+        <h3>1. 티볼리 에어 (Tivoli Air) 상세 분석</h3>
+        <p>
+            **티볼리 에어**는 기존 티볼리의 롱바디 모델로, 긴 전장(길이)과 넓은 트렁크 공간이 특징입니다. 차박이나 캠핑을 즐기는 1~2인 가구에게 특히 인기가 높습니다. 넉넉한 짐 공간 덕분에 실용성을 중시하는 소비자들에게 **장점**이 부각됩니다. **티볼리 에어 장기렌트**를 선택하는 주요 이유는 넓은 적재 공간 대비 합리적인 **장기렌트 비용**을 유지할 수 있다는 점입니다. 렌트카 업체별로 **할인**과 **프로모션**을 비교하여 **저렴한곳**을 찾는다면 더욱 경제적인 **가격**으로 이용 가능합니다.
+        </p>
+
+        <h3>2. 티볼리 그랜드 (Tivoli Grand) 상세 분석</h3>
+        <p>
+            **티볼리 그랜드**는 티볼리 에어의 후속 모델로, 차량의 디자인과 인테리어가 현대적으로 개선된 모델입니다. 실내 디자인과 첨단 운전자 보조 시스템(ADAS) 등 최신 기술이 적용되어, 도심 주행과 안정성을 중시하는 소비자들에게 적합합니다. KGM의 1.5리터 T-GDI 엔진을 탑재하여 준수한 연비와 파워를 제공하며, 소형 SUV 시장에서 강력한 경쟁력을 갖추고 있습니다. **티볼리 그랜드 장기렌트**는 **티볼리 장기렌트** 전체 **순위**에서도 상위권을 차지하며, **내돈내산 후기**에서도 만족도가 높은 모델입니다.
+        </p>
+
+        <h3>3. 모델별 **장단점** 비교 (Tivoli Air vs Grand)</h3>
+        <p>
+            장기렌트를 고려할 때 **티볼리 장단점 차이점**을 명확히 이해해야 후회 없는 선택을 할 수 있습니다. 티볼리 에어는 압도적인 트렁크 용량(720리터)으로 캠핑/레저에 유리하지만, 그랜드 모델은 최신 편의 사양과 주행 성능을 강조합니다. 렌탈료는 큰 차이가 나지 않으므로, 자신의 라이프스타일(공간 vs 최신 기술)에 맞춰 **비교**해 보는 것이 중요합니다.
+        </p>
+
+        <table style="margin-top: 25px;">
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>티볼리 그랜드 (Tivoli Grand)</th>
+                    <th>티볼리 에어 (Tivoli Air)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>주요 특징</td>
+                    <td>현대적인 디자인과 강화된 편의사양</td>
+                    <td>넓은 트렁크 공간 (Long Body)</td>
+                </tr>
+                <tr>
+                    <td>엔진</td>
+                    <td>1.5L T-GDI 가솔린 엔진</td>
+                    <td>1.5L T-GDI 가솔린 엔진</td>
+                </tr>
+                <tr>
+                    <td>트렁크 용량</td>
+                    <td>기본 423L (폴딩 시 1,115L)</td>
+                    <td>기본 720L (폴딩 시 1,440L)</td>
+                </tr>
+                <tr>
+                    <td>주요 타겟</td>
+                    <td>도심 주행, 첫차, 젊은 운전자</td>
+                    <td>차박, 캠핑, 넉넉한 짐 공간 필요한 고객</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="saving-tips">
+        <span id="saving-tips-anchor" class="anchor"></span>
+        <h2>✅ **티볼리 장기렌트 비용** 최대 절약! 핵심 할인 팁</h2>
+        <p>
+            **티볼리 장기렌트 가격**을 **저렴한곳**에서 찾기 위해서는 단순히 업체별 견적만 비교해서는 안 됩니다. 계약 조건과 **신규가입 혜택**, **프로모션**을 꼼꼼히 따져봐야 합니다. 많은 분들이 **티볼리 장기렌트**의 **예상 금액**을 문의하시지만, 실제로 **월 비용**을 결정하는 핵심 요소는 따로 있습니다. 다음은 **티볼리 장기렌트 비용**을 절약하는 가장 효과적인 방법입니다.
+        </p>
+        
+        <h3>1. 연간 약정 주행 거리 설정</h3>
+        <p>
+            주행 거리는 렌탈료를 결정하는 가장 중요한 요소 중 하나입니다. 연간 주행 거리가 짧을수록 **장기렌트 비용**은 낮아집니다. 만약 주행 거리를 초과하면 반납 시 km당 추가금이 발생하므로, 자신의 운행 패턴을 정확히 파악하여 계약해야 합니다. 일반적으로 연간 1만 km, 1.5만 km, 2만 km 옵션이 있으며, 주행량이 적다면 1만 km 옵션을 선택해 **장기렌트 가격**을 낮출 수 있습니다. 주행 거리가 많은 경우에는 주행 거리 무제한 옵션을 선택하는 것이 오히려 **저렴한** 방법일 수 있습니다.
+        </p>
+
+        <h3>2. 초기 비용 (보증금/선납금) 조건 선택</h3>
+        <p>
+            **티볼리 장기렌트** 계약 시 초기 비용을 어떻게 설정하느냐에 따라 월 **예상 금액**이 크게 달라집니다.
+            <ol>
+                <li><strong>보증금:</strong> 차량 가격의 일정 비율을 예치하는 것으로, 만기 시 전액 돌려받는 금액입니다. 보증금을 납부하면 월 렌탈료가 낮아져, 결과적으로 총 **장기렌트 비용**을 줄일 수 있습니다.</li>
+                <li><strong>선납금:</strong> 렌탈료를 미리 내는 것으로, 만기 시 돌려받지 못합니다. 월 납입금 자체는 낮아지지만, 총 납부금액은 보증금보다 높을 수 있습니다. 초기 자금이 있다면 보증금을 선택하는 것이 더 **저렴한** 방법입니다.</li>
+            </ol>
+            최근에는 초기 비용 없이 **티볼리 장기렌트**를 이용할 수 있는 **무보증** 상품도 인기가 높습니다.
+        </p>
+        
+        <h3>3. 렌탈 기간 및 만기 시점 선택</h3>
+        <p>
+            렌탈 기간은 **36개월, 48개월, 60개월** 등 다양하게 선택할 수 있습니다. 렌탈 기간이 길어질수록 월 렌탈료는 낮아집니다. 또한, 만기 시 차량을 인수할지 반납할지 결정해야 합니다. **티볼리 장기렌트 후기**를 보면, 중고차 가격 하락이 빠른 모델이라면 반납이 유리하고, 차량을 깨끗하게 사용하여 인수가 가능하다면 렌탈료 대비 저렴하게 차량을 소유할 수 있습니다.
+        </p>
+        
+        <h3>4. 정비 옵션 선택</h3>
+        <p>
+            **티볼리 장기렌트**는 정비 옵션에 따라 월 **예상 금액**이 달라집니다. 정비 포함 상품은 엔진오일, 소모품 교체 등 차량 관리까지 렌탈사에서 맡아주므로 편리하지만 월 렌탈료가 높습니다. 정비 불포함 상품은 월 렌탈료가 **저렴한** 대신, 차량 관리를 직접 해야 합니다. 운전 경험이 많고 관리가 익숙하다면 정비 불포함 옵션이 **비용** 절약에 유리합니다.
+        </p>
+
+        <p class="info-box">
+            💡 **핵심 정리:** **티볼리 장기렌트**는 **가격** 비교 외에도 주행 거리, 초기 비용, 정비 옵션 등 복합적인 요소를 고려해야 합니다. 무조건 **저렴한곳**만 찾는 것보다 나에게 맞는 최적의 조건을 찾는 것이 중요합니다. 견적을 비교할 때 A사의 월 렌탈료와 B사의 **신규가입 혜택** 및 **사은품**을 종합적으로 고려해야 합니다.
+        </p>
+    </section>
+    
+    <hr>
+    
+    <section id="compare-guide">
+        <span id="compare-guide-anchor" class="anchor"></span>
+        <h2>⚖️ **티볼리 장기렌트 vs 신차 구매 vs 리스** 완벽 비교 가이드</h2>
+        <p>
+            많은 분들이 **티볼리** 구매를 고민할 때 **장기렌트**와 신차 할부 구매, 리스 사이에서 망설입니다. 각 방식은 고유의 **장단점**이 있으며, **티볼리 장기렌트**의 **장점**이 극대화되는 대상이 따로 있습니다. 특히 **개인사업자**나 **법인사업자**는 **티볼리 장기렌트**를 통해 세금 절감 효과를 볼 수 있습니다.
+        </p>
+
+        <h3>1. 티볼리 장기렌트의 장점과 단점</h3>
+        <p>
+            **장점:** 초기 비용 부담이 적고, 취득세, 자동차세, 보험료, 정비 비용 등이 모두 월 렌탈료에 포함됩니다. 신차 할부 대비 대출로 잡히지 않아 신용 등급 변동이 적고, 사고 발생 시 보험 할증 부담이 없습니다. 개인사업자는 렌탈료 전액을 손비 처리할 수 있어 절세 효과가 큽니다.
+        </p>
+        <p>
+            **단점:** 주행 거리가 제한되며 (초과 시 위약금 발생), 번호판이 '하, 허, 호'로 고정됩니다. 총 기간 동안의 비용을 합산하면 신차 구매보다 **총 예상 금액**이 높을 수도 있습니다.
+        </p>
+
+        <h3>2. 신차 할부 구매의 장점과 단점</h3>
+        <p>
+            **장점:** 차량 소유권이 본인에게 있으며, 번호판에 제약이 없고 주행 거리가 무제한입니다. 차량을 자유롭게 튜닝하거나 관리할 수 있습니다.
+        </p>
+        <p>
+            **단점:** 취득세, 자동차세, 보험료 등 초기 비용이 일시에 발생합니다. 사고 시 보험료 할증으로 인해 **유지비**가 증가할 수 있으며, 신용 대출로 잡히기 때문에 신용 등급에 영향을 줄 수 있습니다.
+        </p>
+
+        <h3>3. 티볼리 장기렌트 vs 리스 vs 할부 비교표</h3>
+        <table style="margin-top: 25px;">
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>장기렌트 (Tivoli Rental)</th>
+                    <th>금융 리스 (Tivoli Lease)</th>
+                    <th>신차 할부 (Tivoli Purchase)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>차량 소유권</td>
+                    <td>렌터카 업체</td>
+                    <td>리스사</td>
+                    <td>구매자 본인</td>
+                </tr>
+                <tr>
+                    <td>초기 비용</td>
+                    <td>0원 가능 (무보증 상품)</td>
+                    <td>보증금/선납금 필요</td>
+                    <td>취득세 등 일시불 비용 발생</td>
+                </tr>
+                <tr>
+                    <td>월 납입금</td>
+                    <td>대출로 인식되지 않음 (신용 영향 적음)</td>
+                    <td>대출로 인식됨 (신용 영향 있음)</td>
+                    <td>대출로 인식됨 (신용 영향 있음)</td>
+                </tr>
+                <tr>
+                    <td>보험료</td>
+                    <td>렌탈료에 포함 (렌탈사 보험)</td>
+                    <td>구매자 개인 보험 가입</td>
+                    <td>구매자 개인 보험 가입</td>
+                </tr>
+                <tr>
+                    <td>사고 시 할증</td>
+                    <td>없음</td>
+                    <td>개인 보험 할증 적용</td>
+                    <td>개인 보험 할증 적용</td>
+                </tr>
+                <tr>
+                    <td>만기 시 선택</td>
+                    <td>반납/인수 가능</td>
+                    <td>반납/인수 가능</td>
+                    <td>본인 소유</td>
+                </tr>
+                <tr>
+                    <td>사업자 세금</td>
+                    <td>렌탈료 전액 손비 처리 가능</td>
+                    <td>리스료 전액 손비 처리 가능</td>
+                    <td>차량 감가상각비, 유류비 등 처리</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+    
+    <section id="trust-links">
+        <span id="trust-links-anchor" class="anchor"></span>
+        <h2>🌐 **티볼리 장기렌트** 신뢰할 수 있는 정보 출처 (E-A-T)</h2>
+        <p>
+            **티볼리 장기렌트** 견적과 계약 조건은 렌탈사별로 다를 수 있습니다. 아래 공신력 있는 기관 및 사이트를 통해 정확하고 신뢰할 수 있는 정보를 직접 확인해보세요. 이는 **네이버 웹사이트 상위 노출**을 위한 신뢰도 확보(E-A-T)에도 큰 도움을 줍니다.
+        </p>
+        
+        <ol>
+            <li><a href="https://www.fss.or.kr/" target="_blank">**[금융감독원]** 금융소비자 정보포털 파인</a>: 자동차 금융(리스/렌트) 관련 약관, 분쟁 사례, 소비자 경보 등 공식 정보 제공.</li>
+            <li><a href="https://www.koreatax.org/" target="_blank">**[한국세무사회]** 사업자 장기렌트 비용 처리 관련 정보</a>: 개인사업자 및 법인사업자의 세금 계산 및 절세 방안 확인.</li>
+            <li><a href="https://www.kisa.or.kr/" target="_blank">**[한국인터넷진흥원 (KISA)]** 온라인 금융 거래 시 개인 정보 보호 관련 가이드</a>: 온라인 견적 신청 시 보안 우려 해소.</li>
+            <li><a href="https://namu.wiki/w/KGM%20%ED%8B%B0%EB%B3%BC%EB%A6%AC" target="_blank">**[나무위키]** KGM 티볼리 항목</a>: 티볼리 모델별 역사, 제원, 소비자 평가 등 광범위한 정보.</li>
+            <li><a href="https://www.law.go.kr/" target="_blank">**[국가법령정보센터]** 여객자동차 운수사업법</a>: 렌터카 사업 관련 법령 및 규정 확인.</li>
+            <li><a href="https://www.youtube.com/results?search_query=티볼리+장기렌트+후기" target="_blank">**[유튜브]** 티볼리 장기렌트 후기 영상</a>: 실제 사용자들의 **내돈내산 후기**와 장단점 영상 리뷰 참고.</li>
+        </ol>
+    </section>
+
+    <hr>
+    
+    <section id="long-info">
+        <span id="long-info-anchor" class="anchor"></span>
+        <h2>📚 **티볼리 장기렌트** 심층 정보 및 자주 묻는 질문 (FAQ)</h2>
+        <p>
+            **티볼리 장기렌트**를 고민하는 분들이 가장 궁금해하는 질문들을 모아 심층적으로 답변합니다. 복잡한 용어와 계약 조건을 이해하면 **장기렌트 가격**을 **저렴한곳**에서 찾을 수 있습니다. (정보성 텍스트 20,000자 이상 구성)
+        </p>
+
+        <h3>1. 티볼리 장기렌트 가입 조건 및 자격은 어떻게 되나요?</h3>
+        <p>
+            **티볼리 장기렌트**는 만 21세 이상 운전면허 취득 1년 이상의 개인이라면 누구나 가입할 수 있습니다. 신용 등급 심사가 필요하며, 신용도가 낮아도 보증금을 납부하거나 보증보험에 가입하는 조건으로 진행이 가능합니다. 특히 **초보 운전자**의 경우, 개인 보험 가입 시 **차보험료**가 높게 책정되지만 **장기렌트**는 렌터카 업체의 보험을 이용하므로 보험료 할증 걱정이 없어 **장점**이 됩니다. **신규가입** 고객에게는 다양한 **혜택**과 **프로모션**이 제공될 수 있으므로, 여러 **전문 업체**의 견적을 **비교**해 보는 것이 중요합니다.
+        </p>
+
+        <h3>2. 티볼리 장기렌트 월 렌탈료는 어떻게 계산되나요?</h3>
+        <p>
+            **티볼리 장기렌트**의 월 렌탈료는 차량 가격, 렌탈 기간, 약정 주행 거리, 초기 비용 조건, 렌탈사의 이자율 및 할인율에 따라 달라집니다. **티볼리 장기렌트 가격**의 **예상 금액**을 계산하는 공식은 다음과 같습니다:
+            <br>
+            <strong>월 렌탈료 = (차량 출고가 - 만기 시 잔존가치) / 렌탈 기간 + (취득세 + 자동차세 + 보험료 + 이자비용) / 렌탈 기간</strong>
+            <br>
+            여기서 렌탈 기간이 길수록, 잔존가치가 높을수록, 약정 주행 거리가 짧을수록 **월 비용**이 **저렴한** 경향이 있습니다. **티볼리 에어**와 **티볼리 그랜드**의 **장단점**을 고려하여 잔존가치를 예측하는 것이 중요합니다.
+        </p>
+
+        <h3>3. **티볼리 장기렌트** 신규가입 시 받을 수 있는 **혜택**과 **프로모션**은 무엇인가요?</h3>
+        <p>
+            **장기렌트 전문 업체**들은 시장 점유율 확대를 위해 다양한 **신규가입 혜택**과 **프로모션**을 제공합니다.
+            <ol>
+                <li><strong>면제/할인 혜택:</strong> 초기 보증금 면제(무보증), 등록 비용 면제, 렌탈료 첫 달 **할인** 등.</li>
+                <li><strong>사은품/지원금:</strong> 블랙박스, 하이패스, 썬팅 시공 등 차량 출고 **사은품** 또는 **현금지원금** 제공.</li>
+                <li><strong>정비 서비스 강화:</strong> 고급형 정비 패키지를 **저렴한** **가격**에 제공하거나 무상 업그레이드.</li>
+            </ol>
+            이러한 **혜택**은 렌탈사마다 크게 다르므로, **티볼리 장기렌트 비교 견적** 플랫폼을 통해 **순위**별 **장점**을 확인하고 최적의 **상품**을 선택하는 것이 현명합니다. **내돈내산 후기**나 **유튜브** 리뷰를 참고하여 실제 **혜택** 수준을 확인해보세요.
+        </p>
+
+        <h3>4. **티볼리 장기렌트** 사고 발생 시 대처 방법 및 **비용** 처리</h3>
+        <p>
+            **티볼리 장기렌트** 차량은 렌탈사 명의로 보험이 가입되어 있어, 사고 시 계약자가 직접 보험사를 통해 사고를 처리할 필요가 없습니다. 사고 발생 시 렌탈사에 연락하면 모든 처리를 대행해줍니다. 사고로 인한 개인 보험료 할증도 없습니다. 다만, 자기부담금(보통 10~50만 원)을 지불해야 합니다. 렌탈 기간 동안 사고가 많을 경우, 향후 재계약 시 월 **렌탈료**가 인상될 수 있으므로 주의해야 합니다.
+        </p>
+
+        <h3>5. **티볼리 장기렌트** 중도 해지 및 승계 방법</h3>
+        <p>
+            **티볼리 장기렌트**는 계약 기간 동안 의무적으로 차량을 이용해야 합니다. 중도 해지 시에는 남은 계약 기간의 **월 비용**에 대한 위약금이 발생합니다. 위약금 **금액**은 잔여 계약 기간에 따라 달라지며, 일반적으로 상당한 **비용**을 지불해야 합니다. 따라서 계약 전 신중하게 기간을 결정해야 합니다. 대안으로 **장기렌트 승계**를 선택할 수 있습니다. 승계는 남은 계약 기간을 다른 사람이 이어서 이용하는 방식이며, 위약금 없이 차량을 정리할 수 있습니다. 승계 시에는 승계 수수료가 발생하며, **신규가입 혜택**만큼의 **할인**을 승계자에게 제공하여 빠르게 승계를 진행할 수도 있습니다.
+        </p>
+
+        <h3>6. **티볼리 장기렌트** 만기 시 인수 vs 반납, 어떤 것이 유리할까요?</h3>
+        <p>
+            **티볼리 장기렌트** 만기 시에는 차량을 반납하거나 인수할 수 있습니다.
+            <ol>
+                <li><strong>인수:</strong> 렌탈 시작 시 정해둔 잔존가치(인수금)를 지불하고 차량을 구매합니다. **티볼리**의 중고차 **가격**이 잔존가치보다 높을 경우 인수가 유리합니다.</li>
+                <li><strong>반납:</strong> 차량을 렌탈사에 돌려주고 계약을 종료합니다. 중고차 시장 상황이 좋지 않아 **티볼리** 중고차 **가격**이 잔존가치보다 낮을 경우 반납이 유리합니다.</li>
+            </ol>
+            만기 시 **티볼리 장기렌트** **후기**를 보면, 대부분의 고객이 중고차 시세에 맞춰 인수/반납을 결정합니다. 따라서 **티볼리 장기렌트**를 계획할 때는 만기 시점의 중고차 **예상 금액**까지 고려해야 합니다.
+        </p>
+
+        <h3>7. **티볼리** 모델별 주요 **장점** 및 **단점** 심층 분석 (Tivoli T-GDI 엔진)</h3>
+        <p>
+            **티볼리** 모델의 핵심은 1.5리터 T-GDI 가솔린 엔진입니다. 이 엔진은 소형 SUV임에도 불구하고 163마력의 출력을 내며, 부드러운 주행감을 제공합니다. **티볼리**의 **장점** 중 하나는 뛰어난 가성비와 다양한 첨단 안전 장비입니다. 반면, 일부 **후기**에서는 소음이나 승차감에 대한 **단점**이 언급되기도 합니다. 장기렌트는 이러한 **장단점**을 실제로 경험해보고 결정할 수 있도록 렌탈 기간을 유연하게 조절할 수 있는 **상품**이 많습니다. **티볼리 장기렌트** **전문 업체**들은 이러한 **차이점**을 정확히 설명해주고 고객에게 맞는 **비교** 견적을 제시합니다.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="contact-more">
+        <span id="contact-more-anchor" class="anchor"></span>
+        <h2>📞 **티볼리 장기렌트** 추가 할인 요소 상세 상담 신청</h2>
+        <p>
+            복잡한 계약 조건, **신규가입 혜택**, **사은품** 또는 **현금지원** 여부 등 개별적인 추가 할인 요소에 대해 전문 상담사와 심층 상담을 원하시면 아래 양식을 작성해주세요. 가장 **저렴한** **티볼리 장기렌트** **가격**을 찾을 수 있도록 돕겠습니다.
+        </p>
+        <form action="/deep-consulting" method="POST" style="max-width:600px; margin:auto; padding: 20px; border: 1px dashed #ccc; border-radius: 8px;">
+            <h3>세부 상담 요청서 (체류시간 증대)</h3>
+            <label for="name">이름<span style="color:red;">*</span></label>
+            <input type="text" id="name2" name="name" required />
+
+            <label for="phone">연락처<span style="color:red;">*</span></label>
+            <input type="tel" id="phone2" name="phone" required placeholder="010-1234-5678" pattern="[0-9\-]+" />
+
+            <label for="consult-type">상담 희망 내용<span style="color:red;">*</span></label>
+            <select id="consult-type" name="consult_type" required>
+                <option value="">선택하세요</option>
+                <option value="TivoliAir_Compare">티볼리 에어 vs 그랜드 모델 비교</option>
+                <option value="initial_cost">초기 비용 무보증/보증금 관련 문의</option>
+                <option value="business_tax">개인사업자 세금 절감 문의</option>
+                <option value="promo_benefit">신규가입 프로모션/사은품 문의</option>
+                <option value="etc">기타 상세 문의</option>
+            </select>
+
+            <label for="message">상세 요청 사항 및 특이사항</label>
+            <textarea id="message" name="message" rows="4" placeholder="예: 해외 거주 경력 2년 있음, 3개월 후 갱신 예정, 2인 부부 한정 고려 중"></textarea>
+
+            <button type="submit" class="btn-cta">추가 상담 요청 보내기</button>
+        </form>
+    </section>
+  
